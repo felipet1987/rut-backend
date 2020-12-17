@@ -9,17 +9,18 @@ Este proyecto implementa el servicio rest de busqueda por rut, que se conecta al
 
 ### Ejecutar con maven desde la linea de comando
 
-
-
-- para levantar la aplicacion ejecutar el siguiente comando desde la consola dentro del servidor:
+1. Clonar este proyecto dentro del servidor
+2. Levantar la aplicacion ejecutar el siguiente comando desde la consola dentro del servidor:
     
    ```bash
     $ mvn spring-boot:run
     ```
 
-desde el cliente usar esta url  [localhost:8080/user/find_by_rut](localhost:8080/user/find_by_rut) 
 
-para el request seguir este contrato
+### Consumir el servicio
+1. desde el cliente ejecutar una Consulta POST usando esta url  [localhost:8080/user/find_by_rut](localhost:8080/user/find_by_rut) 
+
+    el body tiene que seguir este contrato
 
     ```json
         {
